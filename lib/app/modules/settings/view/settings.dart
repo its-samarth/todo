@@ -292,21 +292,7 @@ class _SettingsPageState extends State<SettingsPage> {
               info: true,
               textInfo: '$appVersion',
             ),
-            SettingCard(
-              icon: Image.asset(
-                'assets/images/github.png',
-                scale: 20,
-              ),
-              text: '${'project'.tr} GitHub',
-              onPressed: () async {
-                final Uri url =
-                    Uri.parse('https://github.com/DarkMooNight/listsbysam');
-                if (!await launchUrl(url,
-                    mode: LaunchMode.externalApplication)) {
-                  throw Exception('Could not launch $url');
-                }
-              },
-            ),
+           
           ],
         ),
       ),
